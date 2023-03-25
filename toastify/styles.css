@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: #f2f2ff;
+  color: #4c4654;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.card {
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 20px 40px rgb(0 0 0 / 4%);
+  transition: 0.3s;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 0;
+  background: #8f44fd;
+  color: #f7f7f7;
+  height: 36px;
+  border-radius: 4px;
+  padding: 0 12px;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.table {
+  overflow: hidden;
+  display: grid;
+  transition: 0.3s;
+}
+
+.table.empty {
+  max-height: 0;
+  padding: 0;
+}
+
+.row {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  align-content: center;
+  max-height: 54px;
+  padding: 8px 0;
+  transition: 0.3s;
+}
+
+.row.removed {
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+  visibility: hidden;
+}
+
+.row p {
+  margin: auto 0;
+  color: rgb(76 70 84 / 75%);
+}
+
+.rerun-button {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  translate: -50% 0;
+  width: 100px;
+  text-align: center;
+}
+
+.row button {
+  display: grid;
+  place-items: center;
+  border: 0;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: #222222;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.row button:hover {
+  background: #f8f8f8;
+}
+
+body .toastify {
+  padding: 20px 50px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  background: #ff5362;
+  box-shadow: 0 20px 40px rgb(0 0 0 / 4%);
+  border-radius: 10px;
+}
